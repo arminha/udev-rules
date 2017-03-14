@@ -1,5 +1,6 @@
 KERNEL!="sd[a-z][0-9]", GOTO="automount_usb_disk_end"
 # mount my usb disk
+# replace variables starting with '$' with the specific values for the disk
 SUBSYSTEMS=="usb", ATTRS{idVendor}=="$VENDOR", ATTRS{idProduct}=="$PRODUCT", ENV{ID_FS_UUID}=="$UUID", ACTION=="add", RUN+="/bin/mount -o ro,sync,noexec,nodev,noatime,nodiratime /dev/%k $MOUNT_PATH"
 SUBSYSTEMS=="usb", ATTRS{idVendor}=="$VENDOR", ATTRS{idProduct}=="$PRODUCT", ENV{ID_FS_UUID}=="$UUID", ACTION=="remove", RUN+="/bin/umount -l $MOUNT_PATH"
 # Exit
