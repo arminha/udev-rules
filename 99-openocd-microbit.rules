@@ -1,0 +1,3 @@
+# microbit - CMSIS-DAP
+ATTRS{idVendor}=="0d28", ATTRS{idProduct}=="0204", GROUP="uucp"
+
