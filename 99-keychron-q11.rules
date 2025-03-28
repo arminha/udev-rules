@@ -1,0 +1,2 @@
+# Keychron Q11
+KERNEL=="hidraw*", SUBSYSTEM=="hidraw", ATTRS{idVendor}=="3434", ATTRS{idProduct}=="01e1", MODE="0660", GROUP="usb-write-access", TAG+="uaccess", TAG+="udev-acl"

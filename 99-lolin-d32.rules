@@ -1,2 +1,2 @@
 # lolin-d32
-ATTRS{idVendor}=="1a86", ATTRS{idProduct}=="7523", GROUP="uucp"
+ATTRS{idVendor}=="1a86", ATTRS{idProduct}=="7523", GROUP="usb-write-access"

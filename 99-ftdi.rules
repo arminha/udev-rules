@@ -1,2 +1,2 @@
 # FT232 - USB <-> Serial Converter
-ATTRS{idVendor}=="0403", ATTRS{idProduct}=="6001", GROUP="uucp"
+ATTRS{idVendor}=="0403", ATTRS{idProduct}=="6001", GROUP="usb-write-access"
