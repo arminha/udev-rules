@@ -1,0 +1,2 @@
+# Corne V4 Keyboard
+KERNEL=="hidraw*", SUBSYSTEM=="hidraw", ATTRS{idVendor}=="4653", ATTRS{idProduct}=="0004", MODE="0660", GROUP="usb-write-access", TAG+="uaccess", TAG+="udev-acl"
